@@ -1,10 +1,15 @@
 .special-card {
+  position: relative;
   display: grid;
   grid-template-columns: 31% 31% 31%;
   gap: 35px;
   margin-top: 20px;
+  top: 35px;
 }
 .btn-menu {
+  position: relative;
+  top: 30px;
+  right: 30px;
   padding: 1.5rem 3rem;
   font-size: 1.6rem;
   font-weight: 600;
@@ -52,10 +57,10 @@
   align-items: center;
   justify-content: center;
 }
-.order-btn{
-    display: flex;
-    justify-content: center;
-    color: #f49314;
+.order-btn {
+  display: flex;
+  justify-content: center;
+  color: #f49314;
 }
 .image-container {
   width: 100%;
@@ -80,6 +85,10 @@
   .special-card {
     display: flex;
     flex-direction: column;
+  }
+  .btn-menu {
+    position: inherit;
+    font-size: small;
   }
 
   .special-card-text p,

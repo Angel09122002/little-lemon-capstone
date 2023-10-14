@@ -92,6 +92,13 @@
   display: none;
 }
 
+@media screen and (max-width: 659px) {
+  .Logo {
+    position: relative;
+    left: 1px;
+  
+  }
+}
 @media screen and (max-width: 1300px) {
   .navbar {
     display: flex;
@@ -122,7 +129,7 @@
 
   .nav-menu.active {
     padding: 0;
-    background: #242222;
+    background: #465A53;
     left: 0;
     opacity: 1;
     width: 100%;
@@ -139,7 +146,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 40px;
+    right: 20px;
     list-style-type: none;
   }
 
