@@ -25,13 +25,13 @@ h2 {
   margin: 20px 0;
 }
 .btn-hero {
-  border: none;
-  font-size: 15px;
-  font-weight: 600;
-  background-color: #f4ce14;
-  color: black;
-  border-radius: 25px;
-  border: none;
+ padding: 15px 30px;
+    font-size: 16pt;
+    font-weight: 600;
+    background-color: #f4ce14;
+    color: #333333;
+    border-radius: 20px;
+    border: none;
 }
 .btn-hero:hover {
   background-color: #35433e;

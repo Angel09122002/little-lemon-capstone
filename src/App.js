@@ -1,12 +1,15 @@
-import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Reservation from "./components/reservation/Reservation";
+import Home from "./routes/Home";
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reservations" element={<Reservation />} />
+      </Routes>
+    </Router>
   );
 }
 

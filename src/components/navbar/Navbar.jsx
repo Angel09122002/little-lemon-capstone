@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
 import "../../styles/navbar.css";
 
@@ -31,27 +32,31 @@ const NavBar = () => {
       <div className={click ? "nav-menu active" : "nav-menu"}>
         <ul className="nav-ul">
           <li className="nav-item">
-            <a href="/" className="nav-links" onClick={closeMobilemenu}>
+            <Link to="/" className="nav-links" onClick={closeMobilemenu}>
               Home
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
-            <a href="/" className="nav-links" onClick={closeMobilemenu}>
+            <a to="/about" className="nav-links" onClick={closeMobilemenu}>
               About
             </a>
           </li>
 
           <li className="nav-item">
-            <a href="/" className="nav-links" onClick={closeMobilemenu}>
+            <a to="/menu" className="nav-links" onClick={closeMobilemenu}>
               Menu
             </a>
           </li>
 
           <li className="nav-item">
-            <a href="/" className="nav-links" onClick={closeMobilemenu}>
+            <Link
+              to="/reservations"
+              className="nav-links"
+              onClick={closeMobilemenu}
+            >
               Reservations
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/hero.css";
 import Heroimg from "../../assets/heroimg.jpg";
-import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,7 +21,7 @@ const Hero = () => {
         </div>
         <div className="section-right">
           <div className="img-box">
-            <img src={Heroimg} />
+            <img src={Heroimg} alt="Food reception" />
           </div>
         </div>
       </div>
